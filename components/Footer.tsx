@@ -5,12 +5,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 text-white pt-24 pb-12 px-6">
+    <footer className="bg-neutral-950 border-t border-white/5 py-12 text-center text-neutral-500">
       <div className="max-w-7xl mx-auto">
         {/* Large Contact Hook */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end border-b border-slate-800 pb-16 mb-12">
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold mb-6">
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 text-white">
               Have a project <br /> in mind?
             </h2>
             <a 
@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
           
           <div className="mt-10 md:mt-0 flex flex-col gap-4 text-right">
-            <p className="text-slate-400 uppercase tracking-widest text-sm font-semibold">Socials</p>
+            <p className="text-white uppercase tracking-widest text-sm font-semibold">Socials</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-blue-400 transition-colors">Dribble</a>
               <a href="#" className="hover:text-blue-400 transition-colors">Behance</a>

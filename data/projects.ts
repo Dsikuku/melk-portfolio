@@ -51,16 +51,4 @@ export const projects: Project[] = [
     image: "/social.png",
     gridSpan: "md:col-span-1 md:row-span-1", // Small square
   },
-  {
-    id: 7,
-    title: "Lunar Magazine",
-    category: "Editorial",
-    image: "/Magis.png",
-    gridSpan: "md:col-span-1 md:row-span-1",
-    gallery: [
-      "/Magis.png", 
-      "/website.png", 
-      "/Pratt.jpg"
-    ]
-},
 ];

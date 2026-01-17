@@ -13,10 +13,10 @@ export default function ContactPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-6xl md:text-8xl font-bold text-slate-900 mb-8 leading-tight">
+            <h1 className="text-6xl md:text-8xl font-bold text-white-900 mb-8 leading-tight">
               Let’s build <br /> something <br /> <span className="text-blue-600 font-serif italic">great.</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-md mb-12">
+            <p className="text-xl text-white-500 max-w-md mb-12">
               Currently accepting new projects and collaborations. Drop me a line and let's discuss your vision.
             </p>
             

@@ -17,11 +17,11 @@ export default function AboutPage() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-6xl font-bold mb-8">Design that moves the needle.</h1>
-            <p className="text-xl text-gray-600 leading-relaxed mb-6">
+            <p className="text-xl text-white-500 leading-relaxed mb-6">
               I’m a multidisciplinary designer based in Toronto. With over 3 years of experience, 
               I’ve helped startups and established brands find their visual voice.
             </p>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-xl text-white-500 leading-relaxed">
               My philosophy is simple: Design shouldn't just look good; it should work. 
               I focus on creating systems that are functional, scalable, and memorable.
             </p>
@@ -48,10 +48,10 @@ export default function AboutPage() {
         <div className="mt-32 border-t border-gray-100 pt-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <div>
-              <h3 className="text-sm uppercase tracking-widest font-bold text-gray-400 mb-6">Core Services</h3>
+              <h3 className="text-sm uppercase tracking-widest font-bold text-neutral-400 mb-6">Core Services</h3>
               <ul className="space-y-4">
                 {skills.map((skill) => (
-                  <li key={skill} className="text-2xl font-medium text-slate-900">{skill}</li>
+                  <li key={skill} className="text-2xl font-medium tex-white">{skill}</li>
                 ))}
               </ul>
             </div>

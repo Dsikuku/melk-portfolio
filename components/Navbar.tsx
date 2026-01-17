@@ -17,15 +17,16 @@ export default function Navbar() {
       <motion.div 
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="flex items-center gap-8 px-8 py-4 bg-white/70 backdrop-blur-md border border-white/20 rounded-full shadow-lg shadow-black/5"
+        // Changed bg-white/70 to bg-neutral-900/50 and border to white/10
+        className="flex items-center gap-8 px-8 py-4 bg-neutral-900/50 backdrop-blur-xl border border-white/10 rounded-full shadow-2xl shadow-black"
       >
         {/* Designer Logo/Name */}
-        <Link href="/" className="font-bold text-lg tracking-tighter hover:text-blue-600 transition-colors">
-          MELK<span className="text-blue-600">.</span>
+        <Link href="/" className="font-bold text-lg tracking-tighter text-white hover:text-blue-500 transition-colors">
+          MELK<span className="text-blue-500">.</span>
         </Link>
 
-        {/* Vertical Divider */}
-        <div className="w-[1px] h-4 bg-gray-200"></div>
+        {/* Vertical Divider - Changed to a darker shade for dark mode */}
+        <div className="w-[1px] h-4 bg-white/10"></div>
 
         {/* Links */}
         <div className="flex gap-6">
@@ -35,8 +36,8 @@ export default function Navbar() {
               <Link 
                 key={link.name} 
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
-                  isActive ? "text-blue-600" : "text-gray-500"
+                className={`text-sm font-medium transition-colors hover:text-white ${
+                  isActive ? "text-blue-500" : "text-neutral-400"
                 }`}
               >
                 {link.name}

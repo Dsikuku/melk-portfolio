@@ -20,8 +20,8 @@ export default function ProjectCard({ project }: { project: any }) {
           
           {/* Overlay - appears on hover */}
           <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8 text-white">
-            <p className="text-sm font-medium uppercase tracking-widest mb-2">{project.category}</p>
-            <h3 className="text-2xl font-bold">{project.title}</h3>
+            <p className="text-gray-400 font-medium uppercase tracking-widest mb-2">{project.category}</p>
+            <h3 className="text-xl font-bold text-white">{project.title}</h3>
           </div>
         </div>
       </motion.div>

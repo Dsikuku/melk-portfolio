@@ -32,7 +32,7 @@ export default function Hero() {
       {/* 2. Animated Headline */}
       <motion.h1 
         {...fadeInUp}
-        className="text-6xl md:text-8xl font-bold tracking-tight text-slate-900 leading-[1.1]"
+        className="text-6xl md:text-8xl font-bold tracking-tight text-white-900 leading-[1.1]"
       >
         Crafting <span className="text-blue-600">visual identities</span> <br /> 
         that define our future.
@@ -45,9 +45,9 @@ export default function Hero() {
         transition={{ delay: 0.4, duration: 0.6 }}
         className="mt-8 max-w-2xl"
       >
-        <p className="text-xl md:text-2xl text-gray-600 leading-relaxed">
+        <p className="text-xl md:text-2xl text-white-600 leading-relaxed">
           I’m Melkzedek Makokha a Graphic Designer specializing in brand strategy, 
-          digital experiences, and high-impact visual storytelling.
+          digital experiences, and high impact visual storytelling.
         </p>
       </motion.div>
 
@@ -59,7 +59,7 @@ export default function Hero() {
         className="mt-10 flex flex-wrap gap-4"
       >
         <a href="#work" className="px-8 py-4 bg-black text-white rounded-full font-medium hover:scale-105 transition-transform">
-          View Selected Work
+          View My Work
         </a>
         <a href="/contact" className="px-8 py-4 border border-gray-300 rounded-full font-medium hover:bg-gray-50 transition-colors">
           Get in Touch
