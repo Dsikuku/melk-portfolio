@@ -1,9 +1,9 @@
-"use client"; // Required for animations in App Router
+"use client";
 
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  // Animation variants to keep the code clean
+  // Animation variants
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
@@ -24,15 +24,18 @@ export default function Hero() {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
         </span>
-        <span className="text-sm font-medium tracking-wide uppercase text-gray-500">
+        <span className="text-sm font-medium tracking-wide uppercase text-neutral-500">
           Available for new projects
         </span>
       </motion.div>
 
       {/* 2. Animated Headline */}
+      {/* @ts-ignore */}
       <motion.h1 
-        {...fadeInUp}
-        className="text-6xl md:text-8xl font-bold tracking-tight text-white-900 leading-[1.1]"
+        initial="initial"
+        animate="animate"
+        variants={fadeInUp}
+        className="text-6xl md:text-8xl font-bold tracking-tight text-white leading-[1.1]"
       >
         Crafting <span className="text-blue-600">visual identities</span> <br /> 
         that define our future.
@@ -45,9 +48,9 @@ export default function Hero() {
         transition={{ delay: 0.4, duration: 0.6 }}
         className="mt-8 max-w-2xl"
       >
-        <p className="text-xl md:text-2xl text-white-600 leading-relaxed">
-          I’m Melkzedek Makokha a Graphic Designer specializing in brand strategy, 
-          digital experiences, and high impact visual storytelling.
+        <p className="text-xl md:text-2xl text-neutral-400 leading-relaxed">
+          I’m Melkzedek Makokha, a Graphic Designer specializing in brand strategy, 
+          digital experiences, and high-impact visual storytelling.
         </p>
       </motion.div>
 
@@ -58,10 +61,10 @@ export default function Hero() {
         transition={{ delay: 0.6, duration: 0.6 }}
         className="mt-10 flex flex-wrap gap-4"
       >
-        <a href="#work" className="px-8 py-4 bg-black text-white rounded-full font-medium hover:scale-105 transition-transform">
+        <a href="#work" className="px-8 py-4 bg-white text-black rounded-full font-medium hover:bg-blue-600 hover:text-white transition-all duration-300">
           View My Work
         </a>
-        <a href="/contact" className="px-8 py-4 border border-gray-300 rounded-full font-medium hover:bg-gray-50 transition-colors">
+        <a href="/contact" className="px-8 py-4 border border-neutral-700 text-white rounded-full font-medium hover:bg-neutral-800 transition-colors">
           Get in Touch
         </a>
       </motion.div>
