@@ -35,7 +35,7 @@ export default function Hero() {
         className="text-6xl md:text-8xl font-bold tracking-tight text-slate-900 leading-[1.1]"
       >
         Crafting <span className="text-blue-600">visual identities</span> <br /> 
-        that define the future.
+        that define our future.
       </motion.h1>
 
       {/* 3. Animated Sub-headline */}
