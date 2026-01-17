@@ -27,7 +27,7 @@ export const projects: Project[] = [
     id: 3,
     title: "Pratt Heman",
     category: "Branding",
-    image: "Pratt.jpg",
+    image: "/Pratt.jpg",
     gridSpan: "md:col-span-2 md:row-span-1", // Wide rectangle
   },
   {
